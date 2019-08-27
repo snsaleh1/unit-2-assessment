@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>unit-2-assessment</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>To-do List</h1>
+    <ul>
+      <% utwotodos.forEach(function(u, idx) { %>
+      <li><% if (utwotodos) { %>
+        <%= utwotodo %>
+        <% } otherwise { %>
+        <h3>There are no To Dos yet!</h3>
+        <% } %></li>
+      <% }); %>
+    </ul>
+        <form action="/" method="POST" autocomplete="off">
+          <input type="text" name="utwotodo">
+          <button type="submit">Add Todo</button>
+        </form>
+  </body>
+</html>
